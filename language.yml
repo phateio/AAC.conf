@@ -10,8 +10,8 @@ spam_repeat: "Please refrain from repeating yourself"
 spam_repeat_other: "You can't repeat that"
 
 # Command messages
-aac_kick_broadcast: " was kicked for hacking."
-ban_message: "You have been banned for hacking on this server."
+aac_kick_broadcast: " was kicked for cheating."
+ban_message: "You have been banned for cheating on this server."
 
 relog_message: "Wait a few seconds before logging back in."
 
