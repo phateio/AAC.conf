@@ -415,7 +415,7 @@ jesus:
 # Phase stops people glitching through blocks.
 phase:
    # Do you want to enable the Phase check?
-   enabled: true
+   enabled: false
 
    # Which blocks should be exempt from phase checking?
    # Items are included in this list due to potential ViaVersion/cross version compatibility problems with 1.8
