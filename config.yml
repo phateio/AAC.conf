@@ -613,8 +613,11 @@ spam:
    
    # Map of violation levels to commands:
    thresholds:
-      10: "aacstaffnotify {player} in {world} is spamming the chat"
-      15: "aackick {player} Stop spamming, you sad person"
+      10:
+       - "party {player}"
+       - "tellraw @a {\"text\":\"[Honeypot] PARTY TIME! Say hello to {player}\", \"color\":\"green\"}"
+       - "discordsrv:discord broadcast :confetti_ball: **PARTY TIME! Say hello to {player}**"
+       - "discordsrv:discord broadcast <@272932718151598090>"
 
 # Parameters for AAC's packet level movement check system. It is required for nearly all checks.
 # Monitors movement rate and illegal movement positions.
