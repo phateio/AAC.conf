@@ -88,8 +88,8 @@ hitbox:
    thresholds:
       10: "aacstaffnotify {player} in {world} is attacking suspiciously (Hitbox) (ping = {ping}, tps = {tps})"
       25:
-       - "aacstaffnotify {player} kicked for killaura (Hitbox) (ping = {ping}, tps = {tps})"
-       - "aackick {player} Attacking suspiciously"
+       - "aacstaffnotify {player} killed for killaura (Hitbox) (ping = {ping}, tps = {tps})"
+       - "aackill {player} attacking suspiciously"
    
 # Criticals prevents players from getting critical hits when it's not possible.
 criticals:
@@ -105,8 +105,8 @@ criticals:
    # Map of violation levels to commands:
    thresholds:
       10:
-       - "aacstaffnotify {player} kicked for criticals hacking (Criticals) (ping = {ping}, tps = {tps})"
-       - "aackick {player} Illegal movement"
+       - "aacstaffnotify {player} killed for criticals hacking (Criticals) (ping = {ping}, tps = {tps})"
+       - "aackill {player} illegal movement"
 
 # Fastbow prevents players from shooting their bow too quickly.
 fastbow:
@@ -126,8 +126,8 @@ fastbow:
    thresholds:
       5: "aacstaffnotify {player} in {world} seems to be shooting arrows too quickly (ping = {ping}, tps = {tps})"
       25:
-       - "aacstaffnotify {player} kicked for shooting arrows too quickly (FastBow) (ping = {ping}, tps = {tps})"
-       - "aackick {player} Shooting too quickly"
+       - "aacstaffnotify {player} killed for shooting arrows too quickly (FastBow) (ping = {ping}, tps = {tps})"
+       - "aackill {player} shooting too quickly"
 
 # FightSpeed prevents players from attacking too quickly.
 fightspeed:
@@ -150,8 +150,8 @@ fightspeed:
    thresholds:
       10: "aacstaffnotify {player} in {world} might be using an autoclicker (ping = {ping}, tps = {tps})"
       30:
-       - "aacstaffnotify {player} kicked for suspicious click speed (FightSpeed) (ping = {ping}, tps = {tps})"
-       - "aackick {player} Suspicious click speed"
+       - "aacstaffnotify {player} killed for suspicious click speed (FightSpeed) (ping = {ping}, tps = {tps})"
+       - "aackill {player} suspicious click speed"
 
 # Fly prevents players in survival mode from flying.
 fly:
@@ -188,8 +188,8 @@ fly:
       150: "aacstaffnotify {player} in {world} might be trying to fly (ping = {ping}, tps = {tps})"
       300: "aacstaffnotify {player} in {world} is probably trying to fly (ping = {ping}, tps = {tps}"
       450:
-       - "aacstaffnotify {player} kicked for trying to fly (Fly) (ping = {ping}, tps = {tps})"
-       - "aackick {player} Flying"
+       - "aacstaffnotify {player} killed for trying to fly (Fly) (ping = {ping}, tps = {tps})"
+       - "aackill {player} flying"
 
 # Elytra prevents players from moving incorrectly while using the Elytra (1.9+)
 elytra:
@@ -212,8 +212,8 @@ elytra:
       100: "aacstaffnotify {player} in {world} might be cheating with an elytra (ping = {ping}, tps = {tps})"
       250: "aacstaffnotify {player} in {world} is probably cheating with an elytra (ping = {ping}, tps = {tps})"
       400:
-       - "aacstaffnotify {player} kicked for trying to cheat with an elytra (ping = {ping}, tps = {tps})"
-       - "aackick {player} Unusual elytra movement"
+       - "aacstaffnotify {player} killed for trying to cheat with an elytra (ping = {ping}, tps = {tps})"
+       - "aackill {player} unusual elytra movement"
 
 # Vehicles prevents players from exploiting vehicle movement to move too quickly
 vehicles:
@@ -236,8 +236,8 @@ vehicles:
       50: "aacstaffnotify {player} in {world} might be cheating with a vehicle (ping = {ping}, tps = {tps})"
       150: "aacstaffnotify {player} in {world} is probably cheating with an vehicle (ping = {ping}, tps = {tps})"
       300:
-       - "aacstaffnotify {player} kicked for trying to cheat with an elytra (ping = {ping}, tps = {tps})"
-       - "aackick {player} Unusual vehicle movement"
+       - "aacstaffnotify {player} killed for trying to cheat with an elytra (ping = {ping}, tps = {tps})"
+       - "aackill {player} unusual vehicle movement"
 
 # Speed prevents players in survival mode from moving too quickly.
 speed:
@@ -276,11 +276,10 @@ speed:
 
    # Map of violation levels to commands:
    thresholds:
-      100: "aacmessage {player} It looks like you might be glitching, please tap sneak and block with your sword"
       250: "aacstaffnotify {player} in {world} seems to be moving too quickly (ping = {ping}, tps = {tps})"
       500:
-       - "aacstaffnotify {player} kicked for moving too quickly (Speed) (ping = {ping}, tps = {tps})"
-       - "aackick {player} Unexpected movement"
+       - "aacstaffnotify {player} killed for moving too quickly (Speed) (ping = {ping}, tps = {tps})"
+       - "aackill {player} unexpected movement"
 
 # Derp stops some forms of derp cheats.
 derp:
@@ -290,8 +289,8 @@ derp:
    # Map of violation levels to commands:
    thresholds:
       1:
-       - "aacstaffnotify {player} kicked for sending an illegal position (Derp) (ping = {ping}, tps = {tps})"
-       - "aackick {player} Illegal position"
+       - "aacstaffnotify {player} killed for sending an illegal position (Derp) (ping = {ping}, tps = {tps})"
+       - "aackill {player} illegal position"
 
 # Old check for anti-velocity and anti-knockback, see velocity check for current check.
 knockback:
@@ -313,8 +312,8 @@ noswing:
    thresholds:
       20: "aacstaffnotify {player} in {world} is not swinging their arm (ping = {ping}, tps = {tps})"
       40:
-       - "aacstaffnotify {player} kicked for not swinging their arm (NoSwing) (ping = {ping}, tps = {tps})"
-       - "aackick {player} Not swinging arm"
+       - "aacstaffnotify {player} killed for not swinging their arm (NoSwing) (ping = {ping}, tps = {tps})"
+       - "aackill {player} not swinging arm"
 
 # Regen directly stops players from healing too quickly.
 regen:
@@ -334,8 +333,8 @@ regen:
    thresholds:
       10: "aacstaffnotify {player} in {world} is trying to regain health too quickly (ping = {ping}, tps = {tps})"
       20:
-       - "aacstaffnotify {player} kicked for healing too quickly (Regen) (ping = {ping}, tps = {tps})"
-       - "aackick {player} Regenerating health too quickly"
+       - "aacstaffnotify {player} killed for healing too quickly (Regen) (ping = {ping}, tps = {tps})"
+       - "aackill {player} regenerating health too quickly"
 
 # Killaura detects combat cheats which give an unfair advantage.
 killaura:
@@ -373,8 +372,8 @@ killaura:
    thresholds:
       30: "aacstaffnotify {player} in {world} might be using killaura (ping = {ping}, tps = {tps})"
       75:
-       - "aacstaffnotify {player} kicked for killaura hacking (Killaura - Normal) (ping = {ping}, tps = {tps})"
-       - "aackick {player} Suspicious attack speed"
+       - "aacstaffnotify {player} killed for killaura hacking (Killaura - Normal) (ping = {ping}, tps = {tps})"
+       - "aackill {player} suspicious attack speed"
 
 # NoFall ensures players take fall damage.
 nofall:
@@ -394,8 +393,8 @@ nofall:
    thresholds:
       10: "aacstaffnotify {player} in {world} might be trying to avoid fall damage (ping = {ping}, tps = {tps})"
       30:
-       - "aacstaffnotify {player} kicked for trying to avoid fall damage (NoFall) (ping = {ping}, tps = {tps})"
-       - "aackick {player} Suspicious activity midair"
+       - "aacstaffnotify {player} killed for trying to avoid fall damage (NoFall) (ping = {ping}, tps = {tps})"
+       - "aackill {player} suspicious activity midair"
 
 # Jesus stops people from walking on water.
 jesus:
@@ -409,8 +408,8 @@ jesus:
    thresholds:
       15: "aacstaffnotify {player} in {world} is trying to walk on water (ping = {ping}, tps = {tps})"
       30:
-       - "aacstaffnotify {player} kicked for walking on water (Jesus) (ping = {ping}, tps = {tps})"
-       - "aackick {player} Walking on water"
+       - "aacstaffnotify {player} killed for walking on water (Jesus) (ping = {ping}, tps = {tps})"
+       - "aackill {player} walking on water"
 
 # Phase stops people glitching through blocks.
 phase:
@@ -455,8 +454,8 @@ fastuse:
    thresholds:
       2: "aacstaffnotify {player} in {world} is trying to consume items too quickly (ping = {ping}, tps = {tps})"
       5:
-       - "aacstaffnotify {player} kicked consuming items too quickly (FastUse) (ping = {ping}, tps = {tps})"
-       - "aackick {player} Using items too quickly"
+       - "aacstaffnotify {player} killed consuming items too quickly (FastUse) (ping = {ping}, tps = {tps})"
+       - "aackill {player} using items too quickly"
 
 # FastBreak stops players from breaking blocks too quickly.
 fastbreak:
@@ -479,8 +478,8 @@ fastbreak:
    thresholds:
       10: "aacstaffnotify {player} in {world} seems to be breaking blocks too quickly (ping = {ping}, tps = {tps})"
       15:
-       - "aacstaffnotify {player} kicked for mining too quickly (ping = {ping}, tps = {tps})"
-       - "aackick {player} Mining too quickly"
+       - "aacstaffnotify {player} killed for mining too quickly (ping = {ping}, tps = {tps})"
+       - "aackill {player} mining too quickly"
 
 # FastPlace stops players from placing blocks too quickly.
 fastplace:
@@ -500,8 +499,8 @@ fastplace:
    thresholds:
       15: "aacstaffnotify {player} in {world} is placing blocks too quickly (ping = {ping}, tps = {tps})"
       30:
-       - "aacstaffnotify {player} kicked for placing blocks too quickly (ping = {ping}, tps = {tps})"
-       - "aackick {player} Placing blocks too quickly"
+       - "aacstaffnotify {player} killed for placing blocks too quickly (ping = {ping}, tps = {tps})"
+       - "aackill {player} placing blocks too quickly"
 
 # Nuker stops players in creative mode from breaking too many blocks at once.
 nuker:
@@ -517,8 +516,8 @@ nuker:
    # Map of violation levels to commands:
    thresholds:
       5:
-       - "aacstaffnotify {player} in {world} kicked for creative-mode nuker (ping = {ping}, tps = {tps})"
-       - "aackick {player} Nuker"
+       - "aacstaffnotify {player} in {world} killed for creative-mode nuker (ping = {ping}, tps = {tps})"
+       - "aackill {player} nuker"
 
 # Interact stops players interacting in impossible situations, like when they're dead or behind a wall.
 interact:
@@ -552,8 +551,8 @@ interact:
    thresholds:
       20: "aacstaffnotify {player} in {world} is interacting suspiciously (ping = {ping}, tps = {tps})"
       40:
-       - "aacstaffnotify {player} kicked for interacting suspiciously (ping = {ping}, tps = {tps})"
-       - "aackick {player} Interacting suspiciously"
+       - "aacstaffnotify {player} killed for interacting suspiciously (ping = {ping}, tps = {tps})"
+       - "aackill {player} interacting suspiciously"
 
 # Velocity makes sure that players take proper knockback.
 velocity:
@@ -590,8 +589,8 @@ velocity:
    thresholds:
       10: "aacstaffnotify {player} in {world} seems to be ignoring velocity (ping = {ping}, tps = {tps})"
       30:
-       - "aacstaffnotify {player} kicked for not taking knockback (Velocity) (ping = {ping}, tps = {tps})"
-       - "aackick {player} Not taking knockback"
+       - "aacstaffnotify {player} killed for not taking knockback (Velocity) (ping = {ping}, tps = {tps})"
+       - "aackill {player} not taking knockback"
 
 # Spam prevents players from spamming the server chat.
 spam:
@@ -652,8 +651,8 @@ move:
    thresholds:
       250: "aacstaffnotify {player} in {world} seems to be sending illegal movement information (ping = {ping}, tps = {tps})"
       1000:
-       - "aacstaffnotify {player} kicked for sending illegal movement information (ping = {ping}, tps = {tps})"
-       - "aackick {player} Sending unusual movement packets"
+       - "aacstaffnotify {player} killed for sending illegal movement information (ping = {ping}, tps = {tps})"
+       - "aackill {player} sending unusual movement packets"
 
 ### General things
 
