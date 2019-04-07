@@ -62,7 +62,7 @@
 # Hitbox forces players to look at entities they want to attack.
 hitbox:
    # Do you want to enable the hitbox check?
-   enabled: true
+   enabled: false
 
    # How much should AAC expand hitboxes by?
    lenience: 0.65
@@ -111,7 +111,7 @@ criticals:
 # Fastbow prevents players from shooting their bow too quickly.
 fastbow:
    # Do you want to enable the fastbow check?
-   enabled: true
+   enabled: false
    
    # How much lag compensation should AAC perform when checking for fastbow?
    lenience_ms: 130
@@ -132,7 +132,7 @@ fastbow:
 # FightSpeed prevents players from attacking too quickly.
 fightspeed:
    # Do you want to enable the fightspeed check?
-   enabled: true
+   enabled: false
    
    # How many times should a player be able to attack per second?
    max_hit: 15
@@ -285,7 +285,7 @@ speed:
 # Derp stops some forms of derp cheats.
 derp:
    # Do you want to enable the derp check?
-   enabled: true
+   enabled: false
 
    # Map of violation levels to commands:
    thresholds:
@@ -340,7 +340,7 @@ regen:
 # Killaura detects combat cheats which give an unfair advantage.
 killaura:
    # Do you want to enable the killaura check?
-   enabled: true
+   enabled: false
 
    # Should AAC cancel impossible hits?
    cancel_hit: true
@@ -374,7 +374,7 @@ killaura:
       30: "aacstaffnotify {player} in {world} might be using killaura (ping = {ping}, tps = {tps})"
       75:
        - "aacstaffnotify {player} kicked for killaura hacking (Killaura - Normal) (ping = {ping}, tps = {tps})"
-       - "aackick {player} Killaura"
+       - "aackick {player} Suspicious attack speed"
 
 # NoFall ensures players take fall damage.
 nofall:
@@ -400,17 +400,17 @@ nofall:
 # Jesus stops people from walking on water.
 jesus:
    # Do you want to enable the Jesus check?
-   enabled: true
+   enabled: false
 
    # Should Jesus teleport players?
-   teleport: true
+   teleport: false
 
    # Map of violation levels to commands:
    thresholds:
       15: "aacstaffnotify {player} in {world} is trying to walk on water (ping = {ping}, tps = {tps})"
       30:
        - "aacstaffnotify {player} kicked for walking on water (Jesus) (ping = {ping}, tps = {tps})"
-       - "aackick {player} Walking on water?"
+       - "aackick {player} Walking on water"
 
 # Phase stops people glitching through blocks.
 phase:
@@ -446,7 +446,7 @@ phase:
 # FastUse stops players using items too quickly.
 fastuse:
    # Do you want to enable the FastUse check?
-   enabled: true
+   enabled: false
 
    # What delay should AAC enforce for eating an item? (ms)
    ms_to_use: 1200
@@ -523,7 +523,7 @@ nuker:
 # Interact stops players interacting in impossible situations, like when they're dead or behind a wall.
 interact:
    # Do you want to enable the impossibleinteract check?
-   enabled: true
+   enabled: false
 
    # Detect interacting with liquids?
    cancel_liquids: true
@@ -558,7 +558,7 @@ interact:
 # Velocity makes sure that players take proper knockback.
 velocity:
    # Do you want to enable the velocity check
-   enabled: true
+   enabled: false
 
    # How many ticks should AAC check a player for? Higher values compensate for higher ping.
    check_length: 30
@@ -675,7 +675,7 @@ log_file: true
 aackick_broadcast: false
 
 # Should AAC disable/enable checks dynamically? IF YOU HAVE PWP DISABLE
-usetps: true
+usetps: false
 
 # Enable verbose logging? This splits log output and pipes some to administrators. Not recommended for normal use.
 #verbose: false
