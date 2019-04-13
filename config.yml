@@ -464,7 +464,7 @@ fastbreak:
    enabled: true
 
    # How many ticks should fastbreak count as lag, and ignore?
-   let_ticks: 2
+   let_ticks: 10
 
    # Should AAC cancel an illegal block break?
    cancel_break: true
@@ -473,7 +473,7 @@ fastbreak:
    check_delay: true
 
    # How many violations before AAC starts cancelling block breaks?
-   cancel_vl: 1
+   cancel_vl: 15
 
    # Map of violation levels to commands:
    thresholds:
@@ -494,7 +494,7 @@ fastplace:
    cancel_place: true
 
    # How many violations before AAC starts cancelling block placements?
-   cancel_vl: 4
+   cancel_vl: 30
 
    # Map of violation levels to commands:
    thresholds:
