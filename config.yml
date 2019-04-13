@@ -306,7 +306,7 @@ knockback:
 # NoSwing ensures that players swing their arm when attacking or mining.
 noswing:
    # Do you want to enable the noswing check?
-   enabled: true
+   enabled: false
 
    # Map of violation levels to commands:
    thresholds:
