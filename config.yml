@@ -242,10 +242,10 @@ vehicles:
 # Speed prevents players in survival mode from moving too quickly.
 speed:
    # Do you want to enable the speed check?
-   enabled: true
+   enabled: false
 
    # How strongly should AAC enforce movement speeds?
-   threshold: 0.005
+   threshold: 0.2
 
    # How long should a player have to respond to velocity given by the server?
    vel_ticks: 30
@@ -257,7 +257,7 @@ speed:
    max_sneak_toggles: 15
 
    # How many times should a player be allowed to toggle use-item in a second?
-   max_use_toggles: 35
+   max_use_toggles: 70
 
    # How many violations before a player will start being teleported?
    min_vl: 36
@@ -279,7 +279,7 @@ speed:
       250: "aacstaffnotify {player} in {world} seems to be moving too quickly (ping = {ping}, tps = {tps})"
       500:
        - "aacstaffnotify {player} killed for moving too quickly (Speed) (ping = {ping}, tps = {tps})"
-       - "aackill {player} unexpected movement"
+       - "aackill {player} moving too quickly"
 
 # Derp stops some forms of derp cheats.
 derp:
