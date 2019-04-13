@@ -378,7 +378,7 @@ killaura:
 # NoFall ensures players take fall damage.
 nofall:
    # Do you want to enable the NoFall check?
-   enabled: true
+   enabled: false
 
    # What downward velocity is needed to check for nofall?
    required_velocity: -0.2
@@ -387,14 +387,14 @@ nofall:
    check_reduce_attempts: true
 
    # Should AAC deal fall damage to players?
-   deal_damage: true
+   deal_damage: false
    
    # Map of violation levels to commands:
    thresholds:
       10: "aacstaffnotify {player} in {world} might be trying to avoid fall damage (ping = {ping}, tps = {tps})"
       30:
        - "aacstaffnotify {player} killed for trying to avoid fall damage (NoFall) (ping = {ping}, tps = {tps})"
-       - "aackill {player} suspicious activity midair"
+       - "aackill {player} trying to avoid fall damage"
 
 # Jesus stops people from walking on water.
 jesus:
@@ -642,7 +642,7 @@ move:
 
    # Should AAC deal fall damage to players who fail the move check?
    # This doesn't affect fall damage which is set by other checks (e.g. speed, fly).
-   deal_fall: true
+   deal_fall: false
 
    # What teleport offset should AAC accept from players?
    tp_accept_threshold: 0.5
