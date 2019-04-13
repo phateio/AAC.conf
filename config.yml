@@ -159,8 +159,8 @@ fly:
    enabled: true
 
    # How strongly should AAC enforce fall speeds? (smaller values are more accurate)
-   tolerance: 0.015
-   e_tolerance: 0.015
+   tolerance: 0.15
+   e_tolerance: 0.25
 
    # How quickly should AAC increase the violation level for larger movements?
    vl_multiplier: 6.0
@@ -172,7 +172,7 @@ fly:
    vel_ticks: 30
 
    # Teleport the player down if detected?
-   teleport: true
+   teleport: false
 
    # Check for invalid abilities packets?
    abilities: true
@@ -190,6 +190,7 @@ fly:
       450:
        - "aacstaffnotify {player} killed for trying to fly (Fly) (ping = {ping}, tps = {tps})"
        - "aackill {player} flying"
+       - "aackick {player} Flying"
 
 # Elytra prevents players from moving incorrectly while using the Elytra (1.9+)
 elytra:
@@ -197,13 +198,13 @@ elytra:
    enabled: true
 
    # How strongly should AAC enforce elytra movement?
-   tolerance: 0.025
+   tolerance: 0.25
 
    # How quickly should players be able to move after using a firework rocket?
-   rocket_tolerance: 3.0
+   rocket_tolerance: 4.0
 
    # Should AAC teleport players?
-   teleport: true
+   teleport: false
 
    # How many violations before AAC starts teleporting a player down? (needs teleport: true)
    min_vl: 32
@@ -227,7 +228,7 @@ vehicles:
    vl_multiplier: 6.0
 
    # Should AAC teleport players out of their vehicles?
-   teleport: true
+   teleport: false
 
    # How many violations before AAC kicks a player off their vehicle?
    min_vl: 32
