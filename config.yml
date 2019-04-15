@@ -474,12 +474,12 @@ fastbreak:
    check_delay: true
 
    # How many violations before AAC starts cancelling block breaks?
-   cancel_vl: 15
+   cancel_vl: 30
 
    # Map of violation levels to commands:
    thresholds:
-      10: "aacstaffnotify {player} in {world} seems to be breaking blocks too quickly (ping = {ping}, tps = {tps})"
-      15:
+      20: "aacstaffnotify {player} in {world} seems to be breaking blocks too quickly (ping = {ping}, tps = {tps})"
+      30:
        - "aacstaffnotify {player} killed for mining too quickly (ping = {ping}, tps = {tps})"
        - "aackill {player} mining too quickly"
 
@@ -655,6 +655,7 @@ move:
       1000:
        - "aacstaffnotify {player} killed for sending illegal movement information (ping = {ping}, tps = {tps})"
        - "aackill {player} sending unusual movement packets"
+       - "aackick {player} Sending unusual movement packets"
 
 ### General things
 
