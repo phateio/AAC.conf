@@ -159,8 +159,8 @@ fly:
    enabled: true
 
    # How strongly should AAC enforce fall speeds? (smaller values are more accurate)
-   tolerance: 0.15
-   e_tolerance: 0.25
+   tolerance: 1.5
+   e_tolerance: 1.5
 
    # How quickly should AAC increase the violation level for larger movements?
    vl_multiplier: 6.0
