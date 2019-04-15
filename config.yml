@@ -195,7 +195,7 @@ fly:
 # Elytra prevents players from moving incorrectly while using the Elytra (1.9+)
 elytra:
    # Do you want to enable the Elytra check?
-   enabled: true
+   enabled: false
 
    # How strongly should AAC enforce elytra movement?
    tolerance: 0.25
@@ -215,6 +215,7 @@ elytra:
       400:
        - "aacstaffnotify {player} killed for trying to cheat with an elytra (ping = {ping}, tps = {tps})"
        - "aackill {player} unusual elytra movement"
+       - "aackick {player} Unusual elytra movement"
 
 # Vehicles prevents players from exploiting vehicle movement to move too quickly
 vehicles:
