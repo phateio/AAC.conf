@@ -320,7 +320,7 @@ noswing:
 # Regen directly stops players from healing too quickly.
 regen:
    # Do you want to enable the regen check?
-   enabled: true
+   enabled: false
 
    # Should AAC cancel regeneration if it happens too quickly?
    cancel_regen: true
