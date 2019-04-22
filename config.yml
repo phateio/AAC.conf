@@ -489,18 +489,18 @@ fastplace:
    enabled: true
 
    # How many blocks should a player be allowed to place in one second?
-   max_place_per_second: 10
+   max_place_per_second: 20
 
    # Should AAC cancel an illegal block place?
    cancel_place: true
 
    # How many violations before AAC starts cancelling block placements?
-   cancel_vl: 30
+   cancel_vl: 60
 
    # Map of violation levels to commands:
    thresholds:
-      15: "aacstaffnotify {player} in {world} is placing blocks too quickly (ping = {ping}, tps = {tps})"
-      30:
+      30: "aacstaffnotify {player} in {world} is placing blocks too quickly (ping = {ping}, tps = {tps})"
+      60:
        - "aacstaffnotify {player} killed for placing blocks too quickly (ping = {ping}, tps = {tps})"
        - "aackill {player} placing blocks too quickly"
 
