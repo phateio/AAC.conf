@@ -601,10 +601,7 @@ spam:
    
    # What words should not be covered by the anti-spam check?
    # messages less than 3 letters are already ignored
-   whitelist:
-     - "lol"
-     - "hello"
-     - "okay"
+   whitelist: []
    
    # How many messages should a player be able to send in 10 seconds
    message_limit: 4
@@ -614,11 +611,10 @@ spam:
    
    # Map of violation levels to commands:
    thresholds:
-      10:
+      5:
        - "party {player}"
        - "tellraw @a {\"text\":\"[Honeypot] PARTY TIME! Say hello to {player}\", \"color\":\"green\"}"
-       - "discordsrv:discord broadcast :confetti_ball: **PARTY TIME! Say hello to {player}**"
-       - "discordsrv:discord broadcast <@272932718151598090>"
+       - "discordsrv:discord broadcast :confetti_ball: <@272932718151598090> **PARTY TIME! Say hello to {player}**"
 
 # Parameters for AAC's packet level movement check system. It is required for nearly all checks.
 # Monitors movement rate and illegal movement positions.
