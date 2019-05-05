@@ -465,7 +465,7 @@ fastbreak:
    enabled: true
 
    # How many ticks should fastbreak count as lag, and ignore?
-   let_ticks: 10
+   let_ticks: 20
 
    # Should AAC cancel an illegal block break?
    cancel_break: true
