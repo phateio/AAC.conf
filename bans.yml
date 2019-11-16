@@ -1,0 +1,8 @@
+# 
+# This file is used by AAC for its autobanning mechanism. AAC doesn't instantly ban players, but instead can be
+# configured to do so after a certain number of kicks. This feature has returned to AAC 4 by popular request.
+expiration_time: 7
+expiration_time_unit: DAYS
+threshold: 5
+ban_command: aac notify Mock Ban issued for {player}. Configure in bans.yml
+players: {}
