@@ -91,7 +91,7 @@
 
 # Criticals stops players from performing critical hits whilst on the ground
 criticals:
-  enabled: true
+  enabled: false
 
   # Should AAC detect clients that perform minijumps to get critical hits?
   check_minijump: true
@@ -116,7 +116,7 @@ criticals:
 
 # FastBow stops players from shooting arrows too quickly
 fastbow:
-  enabled: true
+  enabled: false
 
   # How lenient should AAC be when measuring bow drawback times? (milliseconds)
   lenience: 200
@@ -141,7 +141,7 @@ fastbow:
 
 # FastUse stops players from consuming items too quickly
 fastuse:
-  enabled: true
+  enabled: false
 
   # How long should AAC require item consumption to take? (milliseconds)
   min_consumption_time: 1200
@@ -166,7 +166,7 @@ fastuse:
 
 # FightSpeed stops players from attacking too quickly
 fightspeed:
-  enabled: true
+  enabled: false
 
   # How many hits per second should AAC limit players to?
   max_hit: 15
@@ -191,7 +191,7 @@ fightspeed:
 
 # Hitbox forces players to look at entities that they want to attack
 hitbox:
-  enabled: true
+  enabled: false
 
   # How much more lenient should AAC be when a player is attacking a mob? (blocks)
   mob_lenience: 0.65
@@ -229,7 +229,7 @@ hitbox:
 
 # Killaura detects modifications that create an unfair advantage in combat
 killaura:
-  enabled: true
+  enabled: false
 
   # AAC has a few different methods of detecting Killaura.
   # How much should the violation level be increased for each of these methods?
@@ -303,7 +303,7 @@ regen:
 
 # Derp detects illegal rotations sent by players
 derp:
-  enabled: true
+  enabled: false
 
   # Control how the violation level decays over time
   decay:
@@ -452,7 +452,7 @@ nofall:
 
 # Phase stops players from moving through solid walls
 phase:
-  enabled: true
+  enabled: false
 
   # Which blocks should AAC treat as air? This can be used to allow cross-version compatibility.
   exclude:
@@ -496,7 +496,7 @@ phase:
 
 # Timer stops players from performing actions too quickly by speeding up time
 timer:
-  enabled: true
+  enabled: false
 
   # How much lag should AAC compensate for when checking? (ticks)
   min_balance: -20
@@ -549,7 +549,7 @@ badpackets:
 
 # FastBreak stops players from breaking blocks too quickly
 fastbreak:
-  enabled: true
+  enabled: false
 
   # Should AAC check for a delay between successive block break attempts?
   check_delay: true
@@ -577,7 +577,7 @@ fastbreak:
 
 # FastPlace stops players from placing blocks too quickly
 fastplace:
-  enabled: true
+  enabled: false
 
   # What delay should AAC enforce between block placements? (ms)
   min_delay: 100
@@ -602,7 +602,7 @@ fastplace:
 
 # Interact detects a number of impossible actions that a hacked client could perform.
 interact:
-  enabled: true
+  enabled: false
 
   # Should AAC detect suspicious block placements?
   check_suspicious_block: true
