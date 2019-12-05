@@ -112,7 +112,7 @@ criticals:
     1: "aac notify %aac_player% getting impossible critical hits (ping %aac_ping%, tps %aac_tps%)"
     2:
       - "aac banvl 1 %aac_player% Kicked for Criticals"
-      - "aackill %aac_player% cheating"
+      - "aackick %aac_player% cheating"
 
 # FastBow stops players from shooting arrows too quickly
 fastbow:
@@ -137,7 +137,7 @@ fastbow:
     3: "aac notify %aac_player% shooting arrows too quickly (ping %aac_ping%, tps %aac_tps%)"
     10:
       - "aac banvl 1 %aac_player% Kicked for FastBow"
-      - "aackill %aac_player% cheating"
+      - "aackick %aac_player% cheating"
 
 # FastUse stops players from consuming items too quickly
 fastuse:
@@ -162,7 +162,7 @@ fastuse:
     3: "aac notify %aac_player% consuming items too quickly (ping %aac_ping%, tps %aac_tps%)"
     10:
       - "aac banvl 1 %aac_player% Kicked for FastUse"
-      - "aackill %aac_player% cheating"
+      - "aackick %aac_player% cheating"
 
 # FightSpeed stops players from attacking too quickly
 fightspeed:
@@ -187,7 +187,7 @@ fightspeed:
     15: "aac notify %aac_player% attacking too quickly (ping %aac_ping%, tps %aac_tps%)"
     30:
       - "aac banvl 1 %aac_player% Kicked for FightSpeed"
-      - "aackill %aac_player% cheating"
+      - "aackick %aac_player% cheating"
 
 # Hitbox forces players to look at entities that they want to attack
 hitbox:
@@ -224,7 +224,7 @@ hitbox:
     10: "aac notify %aac_player% suspected of Killaura (Hitbox) (ping %aac_ping%, tps %aac_tps%)"
     25:
       - "aac banvl 1 %aac_player% Kicked for Hitbox"
-      - "aackill %aac_player% cheating"
+      - "aackick %aac_player% cheating"
 
 # Killaura detects modifications that create an unfair advantage in combat
 killaura:
@@ -272,7 +272,7 @@ killaura:
     100: "aac notify %aac_player% suspected of Killaura (Heuristics) (ping %aac_ping%, tps %aac_tps%)"
     150:
       - "aac banvl 1 %aac_player% Kicked for Killaura"
-      - "aackill %aac_player% cheating"
+      - "aackick %aac_player% cheating"
 
 # Regen stops players from regenerating health too quickly
 regen:
@@ -316,7 +316,7 @@ derp:
   thresholds:
     1:
       - "aac banvl 1 %aac_player% Kicked for Derp"
-      - "aackill %aac_player% cheating"
+      - "aackick %aac_player% cheating"
 
 # Move controls player movement
 move:
@@ -425,7 +425,7 @@ move:
     500: "aac notify %aac_player% appears to be moving incorrectly (ping %aac_ping%, tps %aac_tps%)"
     20000:
       - "aac banvl 0 %aac_player% Kicked for Move" # Default config does not increase banVL if a player is kicked for Move.
-      - "aackill %aac_player% cheating"
+      - "aackick %aac_player% cheating"
 
 # NoFall stops players from avoiding fall damage
 nofall:
@@ -447,7 +447,7 @@ nofall:
     10: "aac notify %aac_player% might be trying to avoid fall damage (ping %aac_ping%, tps %aac_tps%)"
     50:
       - "aac banvl 1 %aac_player% Kicked for NoFall"
-      - "aackill %aac_player% cheating"
+      - "aackick %aac_player% cheating"
 
 # Phase stops players from moving through solid walls
 phase:
@@ -544,7 +544,7 @@ badpackets:
     50: "aac notify %aac_player% is sending invalid packets (ping %aac_ping%, tps %aac_tps%)"
     100:
       - "aac banvl 1 %aac_player% Kicked for BadPackets"
-      - "aackill %aac_player% cheating"
+      - "aackick %aac_player% cheating"
 
 # FastBreak stops players from breaking blocks too quickly
 fastbreak:
@@ -572,7 +572,7 @@ fastbreak:
     5: "aac notify %aac_player% is breaking blocks too quickly (ping %aac_ping%, tps %aac_tps%)"
     20:
       - "aac banvl 1 %aac_player% Kicked for FastBreak"
-      - "aackill %aac_player% cheating"
+      - "aackick %aac_player% cheating"
 
 # FastPlace stops players from placing blocks too quickly
 fastplace:
@@ -597,7 +597,7 @@ fastplace:
     5: "aac notify %aac_player% is placing blocks too quickly (ping %aac_ping%, tps %aac_tps%)"
     20:
       - "aac banvl 1 %aac_player% Kicked for FastPlace"
-      - "aackill %aac_player% cheating"
+      - "aackick %aac_player% cheating"
 
 # Interact detects a number of impossible actions that a hacked client could perform.
 interact:
