@@ -327,7 +327,7 @@ derp:
 
 # Move controls player movement
 move:
-  enabled: true
+  enabled: false
 
   # Should AAC check players asynchronously? This option reduces load on the main server thread by around 40%
   async: false
