@@ -327,7 +327,7 @@ derp:
 
 # Move controls player movement
 move:
-  enabled: false
+  enabled: true
 
   # Should AAC check players asynchronously? This option reduces load on the main server thread by around 40%
   async: false
@@ -344,10 +344,10 @@ move:
   # Control how AAC checks movements in general.
   normal:
     # How lenient should AAC be when checking?
-    tolerance: 0.001
+    tolerance: 0.9
 
     # How lenient should AAC be when a player (on a 1.9+ client) is being pushed by another entity?
-    bumping: 0.1
+    bumping: 1.0
 
     # How much should a move violation of this type contribute to a player's overall VL?
     weight: 1.0
@@ -355,7 +355,7 @@ move:
   # Control how AAC checks movements in water.
   water:
     # How lenient should AAC be when checking?
-    tolerance: 0.001
+    tolerance: 4.2
 
     # How fast should players be able to move with riptide?
     riptide_speed: 4.2
@@ -375,10 +375,10 @@ move:
   # Control how AAC checks movements while using the elytra.
   elytra:
     # How lenient should AAC be when checking?
-    tolerance: 0.001
+    tolerance: 4.0
 
     # How quickly should players be able to travel when rocket boosting with an elytra?
-    rocket_speed: 2.0
+    rocket_speed: 4.0
 
     # How much should a move violation of this type contribute to a player's overall VL?
     weight: 0.6
@@ -386,7 +386,7 @@ move:
   # Control how AAC checks movements when on a vehicle
   vehicle:
     # How lenient should AAC be when checking?
-    tolerance: 0.001
+    tolerance: 0.9
 
     # How much should a move violation of this type contribute to a player's overall VL?
     weight: 0.2
@@ -409,7 +409,7 @@ move:
     wait_ticks: 12
 
     # Should AAC check players who remain entirely stationary?
-    check_stationary: true
+    check_stationary: false
 
     # How much should AAC add to a player's VL if they ignore velocity?
     vl_increment: 100
@@ -422,13 +422,13 @@ move:
 
   # Control how AAC mitigates a cheater's actions
   mitigation:
-    enabled: true
+    enabled: false
     min_vl: 250
 
   # Control actions taken upon reaching certain violation levels
   thresholds:
     500: "aac notify %aac_player% appears to be moving incorrectly (%aac_ping%ms, %aac_tps%TPS)"
-    20000:
+    1000:
       - "aac notify %aac_player% kicked for invalid movement (%aac_ping%ms, %aac_tps%TPS)"
       - "aac banvl 0 %aac_player% Kicked for Move" # Default config does not increase banVL if a player is kicked for Move.
       - "aackick %aac_player% cheating"
