@@ -435,7 +435,7 @@ move:
 
 # NoFall stops players from avoiding fall damage
 nofall:
-  enabled: true
+  enabled: false
 
   # Control how the violation level decays over time
   decay:
