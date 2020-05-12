@@ -533,10 +533,10 @@ badpackets:
   check_abilities: true
 
   # How many times should a player be allowed to toggle use item in one second?
-  max_use_toggle: 80
+  max_use_toggle: 600
 
   # How many times should a player be allowed to toggle sneak in one second?
-  max_sneak_toggle: 20
+  max_sneak_toggle: 400
 
   # Control how the violation level decays over time
   decay:
