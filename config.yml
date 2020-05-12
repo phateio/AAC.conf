@@ -428,7 +428,7 @@ move:
   # Control actions taken upon reaching certain violation levels
   thresholds:
     500: "aac notify %aac_player% appears to be moving incorrectly (%aac_ping%ms, %aac_tps%TPS)"
-    1000:
+    2000:
       - "aac notify %aac_player% kicked for invalid movement (%aac_ping%ms, %aac_tps%TPS)"
       - "aac banvl 0 %aac_player% Kicked for Move" # Default config does not increase banVL if a player is kicked for Move.
       - "aackick %aac_player% cheating"
